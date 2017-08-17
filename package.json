@@ -5,7 +5,9 @@
   "scripts": {
     "server": "PORT=3001 node ./bin/www",
     "client": "cd client && npm start",
-    "start": "npm run server & npm run client &"
+    "dev": "npm run server & npm run client &",
+    "start": "PORT=3001 node ./bin/www",
+    "heroku-postbuild": "cd client && npm --production=false && npm run build"
   },
   "dependencies": {
     "body-parser": "~1.17.1",
@@ -14,6 +16,7 @@
     "express": "~4.15.2",
     "jade": "~1.11.0",
     "morgan": "~1.8.1",
-    "serve-favicon": "~2.4.2"
+    "serve-favicon": "~2.4.2",
+    "react-scripts": "1.0.11"
   }
 }
