@@ -3,11 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "server": "PORT=3001 node ./bin/www",
+    "server": "node ./bin/www",
     "client": "cd client && npm start",
     "dev": "npm run server & npm run client &",
-    "start": "PORT=3001 node ./bin/www",
-    "heroku-postbuild": "cd client && npm --production=false && npm run build"
+    "start": "npm run dev",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
   "dependencies": {
     "body-parser": "~1.17.1",
