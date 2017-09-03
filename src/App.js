@@ -119,7 +119,7 @@ class Question extends React.Component {
           <div className="choice-wrapper">
             <Option 
               name="Hillary Clinton" 
-              headshot="https://upload.wikimedia.org/wikipedia/commons/2/27/Hillary_Clinton_official_Secretary_of_State_portrait_crop.jpg" 
+              headshot="http://imghost.sarna.me/hilldawg.jpg" 
               number={this.props.number}
               addPoint={this.props.addPoint}
               checkAnswer={this.checkAnswer.bind(this)}
@@ -128,7 +128,7 @@ class Question extends React.Component {
             />
             <Option 
               name="Leslie Knope" 
-              headshot="https://media.glamour.com/photos/569580c38fa134644ec26260/master/pass/entertainment-2015-01-leslie-knope-final-season-main.jpg" 
+              headshot="http://imghost.sarna.me/knope.jpg" 
               number={this.props.number}
               addPoint={this.props.addPoint}
               checkAnswer={this.checkAnswer.bind(this)}
