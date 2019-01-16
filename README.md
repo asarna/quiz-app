@@ -1,6 +1,8 @@
 # quiz-app
 
-Run locally: 
+A quiz for Parks & Recreation fans.
+
+Run locally:
 
 `git clone https://github.com/asarna/quiz-app.git`
 
